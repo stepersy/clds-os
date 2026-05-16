@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefano Persano Adorno</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 1px solid #000000;
+            background-color: transparent;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+        }
+        .footer-text {
+            font-size: 0.8rem;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Questo sito è di proprietà di Stefano Persano Adorno.</h1>
+    <h2>Per conto di Obiettivo Studenti Torino</h2>
+    
+    <a href="https://www.instagram.com/obiettivostudenti_unito" target="_blank" class="btn">Interessato ad acquistarlo?</a>
+
+    <footer>
+        <span class="footer-text" onclick="mostraPopup()">Info per i vecchi proprietari</span>
+    </footer>
+
+    <script>
+        function mostraPopup() {
+            alert("Torino>>>>>>Milano");
+        }
+    </script>
+
+</body>
+</html>
