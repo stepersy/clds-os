@@ -54,22 +54,40 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        .banner {
+            display: none;
+            position: fixed;
+            bottom: 60px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Questo sito è di proprietà di Stefano Persano Adorno.</h1>
-    <h2>Per conto di Obiettivo Studenti Torino</h2>
+    <h1>Sito acquistato da este</h1>
+    <h2>Per conto (più o meno) di Obiettivo Studenti Torino</h2>
     
-    <a href="https://www.instagram.com/obiettivostudenti_unito" target="_blank" class="btn">Interessato ad acquistarlo?</a>
+    <a href="https://www.instagram.com/obiettivostudenti_unito" target="_blank" class="btn">Seguici su Instagram!</a>
 
     <footer>
-        <span class="footer-text" onclick="mostraPopup()">Info per i vecchi proprietari</span>
+        <span class="footer-text" onclick="mostraPopup()">Qua una info per i vecchi proprietari</span>
     </footer>
+
+    <div id="customBanner" class="banner">Torino>>>>>>Milano</div>
 
     <script>
         function mostraPopup() {
-            alert("Torino>>>>>>Milano");
+            const banner = document.getElementById('customBanner');
+            banner.style.display = 'block';
+            
+            setTimeout(() => {
+                banner.style.display = 'none';
+            }, 3000);
         }
     </script>
 
